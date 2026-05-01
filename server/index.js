@@ -25,8 +25,8 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
 
     // Any route that is NOT an API route, load the index.html from client/dist
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html'));
+    app.get('(.*)', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html'));
     });
 } else {
     // Basic root route for development testing
