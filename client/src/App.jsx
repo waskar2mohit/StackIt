@@ -9,7 +9,7 @@ import QuestionDetail from './components/QuestionDetail';
 import Loader     from './components/Loader';
 import EmptyState from './components/EmptyState';
 
-const API = 'http://localhost:5000/api';
+const API = '/api';
 
 const App = () => {
   // ── State ──────────────────────────────────────────────────────────────
