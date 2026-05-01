@@ -1,0 +1,15 @@
+# Dependency folders
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables (Secrets)
+.env
+server/.env
+
+# Build folders
+client/dist/
+
+# Operating system files
+.DS_Store
+thumbs.db
