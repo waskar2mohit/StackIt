@@ -12,7 +12,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
     e.preventDefault();
     const endpoint = isLogin ? 'login' : 'register';
     try {
-      const res = await fetch(`http://localhost:5000/api/auth/${endpoint}`, {
+      const res = await fetch(`/api/auth/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
